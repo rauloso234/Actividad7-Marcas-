@@ -1,0 +1,4 @@
+<div>
+    <p *ngFor="let Una of Tareas" ngClass="tarea"> {{Una.titulo}} {{Una.descripcion}} {{Una.fecha}} <button
+            (click)="eliminar(Una.titulo)">eliminar</button></p>
+</div>

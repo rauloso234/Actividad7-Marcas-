@@ -1,0 +1,17 @@
+<div id="Listado">
+    <input #enum type="text">
+    <input #descripcion type="text">
+    <input #fecha type="text">
+    <button (click)="AnadirTarea(enum.value,descripcion.value, fecha.value)">añadir</button>
+    <br>
+    <input #enummod type="text">
+    <input #descripcionmod type="text">
+    <input #fechamod type="text">
+
+    <div *ngIf="inicio">
+        <p *ngFor="let Una of Tareas"> {{Una.titulo}} {{Una.descripcion}} {{Una.fecha}} <button
+                (click)="eliminar(Una.titulo,Una.descripcion,Una.fecha)">eliminar</button><button
+                (click)="modificar(Una.titulo,Una.descripcion,Una.fecha, enummod.value, descripcionmod.value, fechamod.value)">modificar</button>
+        </p>
+    </div>
+</div>
