@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Agenda';
-  corrovoracion : Boolean = false;
+  corrovoracion: {
+    estadoMenu: boolean;
+  };
+  
+
+  constructor() {
+    this.corrovoracion = { estadoMenu: false };
+  }
 }

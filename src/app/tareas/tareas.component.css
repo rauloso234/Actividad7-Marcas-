@@ -1,4 +1,10 @@
-#Listado{ background-color: lightblue;
-    height: 100%;
+
+#Listado{
+   background-color: lightblue;
+    height: 40%;
+    width: 40%;
     
+  }
+  #modificaciones {
+    background-color: green;
   }
